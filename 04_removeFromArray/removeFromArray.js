@@ -1,4 +1,8 @@
-const removeFromArray = function() {
+const removeFromArray = function(arrayElements, itemToRemove) {
+
+    let location = arrayElements.indexOf(itemToRemove);
+    arrayElements.splice(location, 1)
+    return arrayElements;
 
 };
 
